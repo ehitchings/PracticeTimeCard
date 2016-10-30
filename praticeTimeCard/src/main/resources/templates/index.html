@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>TimeCard</title>
+    <link rel="stylesheet" href="../static/bootstrap.css" th:href="@{/bootstrap.css}"/>
+    <script type="javascript" src="/static/angular.min.js" th:src="@{/angular.js.min}"></script>
+    <script type="javascript" src="/static/app/app.module.js" th:src="@{app/app.module.js.min}"></script>
+    <script type="javascript" src="/static/app/timeCardCtrl.js" th:src="@{app/timeCardCtrl.module.js.min}"></script>
+</head>
+<body ng-app="app" ng-controller ="timeCtrl">
+<header>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+            <a class="navbar-brand" href="#">Time Card</a>
+           </div>
+            <p class="navbar-text navbar-right" style="margin-right: 10px" th:text = "'Signed in as ' + ${username}">Singed in as</p>
+        </div>
+    </nav>
+
+</header>
+<div>
+App
+</div>
+<footer  th:text = "${Date }"> Page was rendered today</footer>
+
+</body>
+</html>
